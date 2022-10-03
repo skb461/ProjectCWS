@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>ClassicWebSchool-HTML Elements</title>
+
+
+    <!--Site Icons-->
+    <link rel="shortcut icon" href="../images/logo/cws_logo.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../images/logo/cws_logo.png">
+
+	<!-- custom css -->
+	<link rel="stylesheet" href="style.css">
+
+	<!-- bootstrap4 css -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	
+<style type="text/css" media="screen">
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	.menu-area{
+		position: static;
+	}
+	.extra-bg{
+		background: #A2A2A2;
+	}
+	.code-bg{
+		background: #D5D5D5;
+		font-size: 15px;
+		border-radius: 5px;
+	}
+	.mega-one, .mega-two, .mega-three{
+		transition: 0.3s all ease;
+	}
+	.sideManuList{
+		list-style: none;
+	}
+	.sideManuList li{
+		line-height: 30px;
+	}
+	.sideManuList li a{
+		color: #E8E8E8;
+		transition: 0.3s all ease;
+	}
+	.sideManuList li a:hover{
+		color: #00D17F;
+	}
+	.down_manu a:hover{
+		color: #00D17F;
+	}
+	.mega-dropdown h5{
+		color: #d4d4d4;
+		font-size: 30px;
+		line-height: 40px;
+		letter-spacing: 0.5px;
+	}
+	.mega-dropdown a{
+		color: #e2e2e2;
+		line-height: 30px;
+		word-spacing: 2px;
+		letter-spacing: 1px;
+	}
+	.active{
+		border-bottom: 1px solid #E8E8E8;
+		font-size: 15px;
+	}
+	.title{
+		font-size: 45px;
+	}
+	.description_html{
+		font-size: 15px;
+	}
+	#dropdown{
+		display: none;
+	}
+	@media screen and (max-width: 1498px) {
+
+	#sideBarManu{
+		display: none;
+	}
+
+	#dropdown{
+		display: block;
+	}
+
+	}
+
+
+</style>
+
+</head>
+<body>
+
+<!-- top manu start -->
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12">
+					<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+					  <!-- <a class="navbar-brand" href="#">Classic Web School</a> -->
+					  <a href="../index.html" title=""><img src="../images/logo/cws_logo.png" alt="Classic Web School" class="img-fluid logo-img px-3" style="height: 70px;"></a>
+					  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
+					    <span class="navbar-toggler-icon"></span>
+					  </button>
+
+					  <div class="collapse navbar-collapse" id="navbar">
+					    <ul class="navbar-nav ml-auto">
+					      <li class="nav-item">
+					        <a class="nav-link px-3" href="../index.html">Home</a>
+					      </li>
+					      <li class="nav-item">
+					        <a class="nav-link px-3" href="#">About</a>
+					      </li>
+					      <li class="nav-item dropdown menu-area">
+					        <a class="nav-link dropdown-toggle px-3 active" href="#" id="mega-one" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					          Tutorials
+					        </a>
+					        <div class="dropdown-menu menu-area container-fluid p-5 mega-dropdown bg-dark text-light" aria-labelledby="mega-one">
+					          <div class="row">
+					          	<div class="col-sm-6 col-lg-3">
+									<h5>HTML</h5>
+										<a href="learn_html_1.html" class="dropdown-item">Learn HTML Base</a>
+										<a href="#" class="dropdown-item">Learn HTML Forms</a>
+										<a href="#" class="dropdown-item">Learn HTML Graphyics</a>
+										<a href="#" class="dropdown-item">Learn HTML Media</a>
+										<a href="#" class="dropdown-item">Learn HTML APIs</a>
+								</div>
+								<div class="col-sm-6 col-lg-3">
+									<h5>CSS</h5>
+										<a href="#" class="dropdown-item">Learn CSS Base</a>
+										<a href="#" class="dropdown-item">Learn CSS Advanced</a>
+										<a href="#" class="dropdown-item">Learn CSS Aminations</a>
+										<a href="#" class="dropdown-item">Learn CSS Grid</a>
+								</div>
+								<div class="col-sm-6 col-lg-3">
+									<h5>JavaScript</h5>
+										<a href="#" class="dropdown-item">Learn JavaScript Base</a>
+										<a href="#" class="dropdown-item">Learn JavaScript Versions</a>
+										<a href="#" class="dropdown-item">Learn JavaScript Froms</a>
+										<a href="#" class="dropdown-item">Learn JavaScript Objects</a>
+										<a href="#" class="dropdown-item">Learn JavaScript Functions</a>
+										<a href="#" class="dropdown-item">Learn JavaScript Classes</a>
+										<a href="#" class="dropdown-item">Learn JavaScript Async</a>
+										<a href="#" class="dropdown-item">Learn JavaScript HTML DOM</a>
+										<a href="#" class="dropdown-item">Learn JavaScript Browser BOM</a>
+										<a href="#" class="dropdown-item">Learn JavaScript AJAX</a>
+										<a href="#" class="dropdown-item">Learn JavaScript JSON</a>
+										<a href="#" class="dropdown-item">Learn JavaScript Web APIs</a>
+								</div>
+								<div class="col-sm-6 col-lg-3">
+									<h5>PHP</h5>
+										<a href="#" class="dropdown-item">Learn PHP Tutorials</a>
+										<a href="#" class="dropdown-item">Learn PHP Forms</a>
+										<a href="#" class="dropdown-item">Learn PHP Advanced</a>
+										<a href="#" class="dropdown-item">Learn PHP OOP</a>
+										<a href="#" class="dropdown-item">Learn PHP with MySQL Database</a>
+										<a href="#" class="dropdown-item">Learn PHP XML</a>
+										<a href="#" class="dropdown-item">Learn PHP AJAX</a>
+								</div>
+								<div class="col-sm-6 col-lg-3">
+									<h5>SQL</h5>
+										<a href="#" class="dropdown-item">Learn SQL Base</a>
+										<a href="#" class="dropdown-item">Learn SQL Database</a>
+					          	</div>
+					          </div>
+					        </div>
+					      </li>
+
+
+					      <li class="nav-item dropdown menu-area">
+					        <a class="nav-link dropdown-toggle px-3" href="#" id="mega-two" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					          References
+					        </a>
+					        <div class="dropdown-menu menu-area container-fluid p-5 mega-dropdown bg-dark text-light" aria-labelledby="mega-two">
+					          <div class="row">
+					          	<div class="col-sm-6 col-lg-3">
+									<h5>HTML</h5>
+										<a href="#" class="dropdown-item">HTML Tag Reference</a>
+										<a href="#" class="dropdown-item">HTML Attribute Reference</a>
+										<a href="#" class="dropdown-item">HTML Color Reference</a>
+										<a href="#" class="dropdown-item">HTML Browser Support</a>
+										<a href="#" class="dropdown-item">HTML Canvas Reference</a>
+										<a href="#" class="dropdown-item">HTML SVG Reference</a>
+										<a href="#" class="dropdown-item">HTML Character Sets</a>
+								</div>
+								<div class="col-sm-6 col-lg-3">
+									<h5>CSS</h5>
+										<a href="#" class="dropdown-item">CSS Property Reference</a>
+										<a href="#" class="dropdown-item">CSS Browser Support</a>
+										<a href="#" class="dropdown-item">CSS Sector Reference</a>
+										<a href="#" class="dropdown-item">Bootstrap 3 Reference</a>
+										<a href="#" class="dropdown-item">Bootstrap 4 Reference</a>
+										<a href="#" class="dropdown-item">Bootstrap 5 Reference</a>
+										<a href="#" class="dropdown-item">Icon Reference</a>
+										<a href="#" class="dropdown-item">Sass Character Sets</a>
+								</div>
+								<div class="col-sm-6 col-lg-3">
+									<h5>JavaScript</h5>
+										<a href="#" class="dropdown-item">JavaScript Reference</a>
+										<a href="#" class="dropdown-item">HTML DOM Reference</a>
+										<a href="#" class="dropdown-item">jQuery Reference</a>
+										<a href="#" class="dropdown-item">AngularJS Property Reference</a>
+										<a href="#" class="dropdown-item">AppML Property Reference</a>
+								</div>
+								<div class="col-sm-6 col-lg-3">
+									<h5>Server Side</h5>
+										<a href="#" class="dropdown-item">SQL Reference</a>
+										<a href="#" class="dropdown-item">PHP Reference</a>
+										<a href="#" class="dropdown-item">ASP Reference</a>
+								</div>
+					          </div>
+					        </div>
+					      </li>
+
+
+					      <li class="nav-item dropdown menu-area">
+					        <a class="nav-link dropdown-toggle px-3" href="#" id="mega-three" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					          Examples
+					        </a>
+					        <div class="dropdown-menu menu-area container-fluid p-5 mega-dropdown bg-dark text-light" aria-labelledby="mega-three">
+					          <div class="row">
+					          	<div class="col-sm-6 col-lg-3">
+									<h5>HTML & CSS</h5>
+										<a href="#" class="dropdown-item">HTML Examples</a>
+										<a href="#" class="dropdown-item">CSS Examples</a>
+										<a href="#" class="dropdown-item">Bootstrap Examples</a>
+										<a href="#" class="dropdown-item">SVG Examples</a>
+								</div>
+								<div class="col-sm-6 col-lg-3">
+									<h5>JavaScript</h5>
+										<a href="#" class="dropdown-item">JavaScript Examples</a>
+										<a href="#" class="dropdown-item">HTML DOM</a>
+										<a href="#" class="dropdown-item">jQuery Examples</a>
+										<a href="#" class="dropdown-item">AngularJS Examples</a>
+										<a href="#" class="dropdown-item">AJAX Examples</a>
+								</div>
+								<div class="col-sm-6 col-lg-3">
+									<h5>Server Side</h5>
+										<a href="#" class="dropdown-item">SQL Examples</a>
+										<a href="#" class="dropdown-item">PHP Examples</a>
+										<a href="#" class="dropdown-item">ASP Examples</a>
+								</div>
+					          </div>
+					        </div>
+					      </li>
+
+					      <li class="nav-item">
+					        <a class="nav-link px-3" href="#">Donate</a>
+					      </li>
+
+					    </ul>
+					  </div>
+					</nav>	
+				</div>
+			</div>
+		</div>
+
+
+
+<!-- top manu end -->
+
+<!-- main section start -->
+
+	
+	<section class="container-fluid row contentSection mt-1 col-12">
+		
+		<!-- sideBarManu start -->
+		<div class="col-lg-2 bg-dark" id="sideBarManu">
+			<div class="container">
+						<div class="sideContent">
+							<div class="">
+								<header class="text-light h3 py-2">HTML Base</header>
+								<hr class="bg-light w-100">
+								<ul class="sideManuList">
+									<li><a href="learn_html_1.html">HTML Introduction</a></li>
+									<li><a href="learn_html_2.html">Html Editors</a></li>
+									<li><a href="learn_html_3.html">HTML Doctype</a></li>
+									<li><a href="#"  class="active">HTML Elements</a></li>
+									<li><a href="#">HTML Attributes</a></li>
+									<li><a href="#">HTML Headings</a></li>
+									<li><a href="#">HTML Paragraph</a></li>
+									<li><a href="#">HTML Style</a></li>
+									<li><a href="#">HTML Formation</a></li>
+									<li><a href="#">HTML Quotations</a></li>
+									<li><a href="#">HTML Comments</a></li>
+									<li><a href="#">HTML Color</a></li>
+									<li><a href="#">HTML CSS</a></li>
+									<li><a href="#">HTML Links</a></li>
+									<li><a href="#">HTML Images</a></li>
+									<li><a href="#">HTML Tables</a></li>
+									<li><a href="#">HTML List</a></li>
+									<li><a href="#">HTML Block & Inline</a></li>
+									<li><a href="#">HTML Classes</a></li>
+									<li><a href="#">HTML Id</a></li>
+									<li><a href="#">HTML Iframes</a></li>
+									<li><a href="#">HTML JavaScript</a></li>
+									<li><a href="#">HTML File Paths</a></li>
+									<li><a href="#">HTML Head</a></li>
+									<li><a href="#">HTML Layout</a></li>
+									<li><a href="#">HTML Responsive</a></li>
+									<li><a href="#">HTML Semantics</a></li>
+									<li><a href="#">HTML Entities</a></li>
+									<li><a href="#">HTML Symbols</a></li>
+									<li><a href="#">HTML Emojis</a></li>
+									<li><a href="#">HTML Charsets</a></li>
+									<li><a href="#">HTML URL Encode</a></li>
+								</ul>
+							</div>
+							<div class="">
+								<header class="text-light h3 py-2">HTML Forms</header>
+								<hr class="bg-light w-100">
+								<ul class="sideManuList">
+									<li><a href="#">HTML Forms</a></li>
+									<li><a href="#">HTML Forms Attributes</a></li>
+									<li><a href="#">HTML Forms Elements</a></li>
+									<li><a href="#">HTML Input Type</a></li>
+									<li><a href="#">HTML Input Form Attributes</a></li>
+								</ul>
+							</div>
+							<div class="">
+								<header class="text-light h3 py-2">HTML Media</header>
+								<hr class="bg-light w-100">
+								<ul class="sideManuList">
+									<li><a href="#">HTML Media</a></li>
+									<li><a href="#">HTML Video</a></li>
+									<li><a href="#">HTML Audio</a></li>
+									<li><a href="#">HTML Plug-ins</a></li>
+									<li><a href="#">HTML Youtube</a></li>
+								</ul>
+							</div>
+							<div class="">
+								<header class="text-light h3 py-2">HTML Graphics</header>
+								<hr class="bg-light w-100">
+								<ul class="sideManuList">
+									<li><a href="#">HTML Canvas</a></li>
+									<li><a href="#">HTML SVG</a></li>
+								</ul>
+							</div>
+
+							<div class="">
+								<header class="text-light h3 py-2">HTML APIs</header>
+								<hr class="bg-light w-100">
+								<ul class="sideManuList">
+									<li><a href="#">HTML Geolocation</a></li>
+									<li><a href="#">HTML Drag & Drop</a></li>
+									<li><a href="#">HTML web Storage</a></li>
+									<li><a href="#">HTML web Workers</a></li>
+									<li><a href="#">HTML SSE</a></li>
+								</ul>
+							</div>
+							<div class="">
+								<header class="text-light h3 py-2">HTML Examples</header>
+								<hr class="bg-light w-100">
+								<ul class="sideManuList">
+									<li><a href="#">HTML Examples</a></li>
+									<li><a href="#">HTML Summary</a></li>
+									<li><a href="#">HTML Accessibility</a></li>
+								</ul>
+							</div>
+							<div class="">
+								<header class="text-light h3 py-2">HTML References</header>
+								<hr class="bg-light w-100">
+								<ul class="sideManuList">
+									<li><a href="#">HTML Tag List</a></li>
+									<li><a href="#">HTML Attributes</a></li>
+									<li><a href="#">HTML Global Attributes</a></li>
+									<li><a href="#">HTML Browser Support</a>
+									<li><a href="#">HTML Events</a></li>
+									<li><a href="#">HTML Color</a></li>
+									<li><a href="#">HTML Canvas</a></li>
+									<li><a href="#">HTML Audio & Video</a></li>
+									<li><a href="#">HTML Doctypes</a></li>
+									<li><a href="#">HTML Character Sets</a></li>
+									<li><a href="#">HTML URL Encode</a></li>
+									<li><a href="#">HTML Lang Code</a></li>
+									<li><a href="#">HTTP Massages</a></li>
+									<li><a href="#">HTTP Methods </a></li>
+								</ul>
+							</div>
+						</div>
+				
+			</div>	
+		</div>
+		<!-- sideBarManu end -->
+		<div class="container-fluid col-lg-8">
+			<div class="container-fluid col-12 py-3 pt-5">
+				<div class="p-2">
+					<h1 class="display-4 text-dark font-weight-bold">HTML Elements</h1>
+					<hr class="w-100 bg-secondary float-left pt-1 mt-lg-3">
+				</div>
+				<div class="">
+					<h3 class="text-dark">HTML element is defined by a starting tag with some content and an ending tag.</h3>
+				</div>
+			</div>
+			<div class="container-fluid col-12">
+				<div class="py-2 my-2">
+					<div class="">
+						<p class="text-dark title font-weight-bold font-italic">Concept of HTML Elements</p>
+					</div>
+					<div class="description_html">
+						<div class="py-md-2">
+
+							<p class="text-dark p-md-2">All the content of the <span class="text-danger">containt</span> posses between the <span class="text-danger">stating</span> and <span class="text-danger">ending</span> tag.</p>
+
+							<div class="description_html">
+								<h3> &#60 <span class="text-danger">tagname</span> &#62 Content Here &#60 /<span class="text-danger">tagname</span> &#62 </h3>
+
+								<p class="text-dark p-md-2">Examples of some HTML elements:</p>
+
+								<h3>&#60 <span class="text-danger">h1</span> &#62 This is a heading. &#60 /<span class="text-danger">h1</span> &#62</h3><br>
+
+								<h3>&#60 <span class="text-danger">p</span> &#62 This is a paragraph. &#60 /<span class="text-danger">p</span> &#62</h3>
+							</div>
+							<div class="description_html p-md-4 p-2">
+							<table class="table-bordered table-hover table-striped table">
+								<thead>
+									<tr>
+										<th>Starting Tag</th>
+										<th>Element Content</th>
+										<th>Ending Tag</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>&#60 h1 &#62</td>
+										<td>This is a heading.</td>
+										<td>&#60 /h1 &#62</td>
+									</tr>
+									<tr>
+										<td>&#60 p &#62</td>
+										<td>This is a paragraph.</td>
+										<td>&#60 /p &#62</td>
+									</tr>
+									<tr>
+										<td>&#60 br &#62</td>
+										<td><span class="text-warning font-weight-bold">N/A</span></td>
+										<td><span class="text-warning font-weight-bold">N/A</span></td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="jumbotron-fluid bg-warning p-2 rounded">
+								<p class="text-muted h5 p-2 text-justify"> <span class="text-dark">#Note:</span> Some HTML elements have no content (like the &#60 hr &#62 or &#60 br &#62 element). These elements are called empty elements. Empty elements do not have an end tag!</p>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="py-2 my-2">
+					<div class="">
+						<p class="text-dark title font-weight-bold font-italic">Nested HTML Elements</p>
+					</div>
+					<div class="description_html">
+						<div class="py-md-2">
+
+							<p class="text-dark p-md-2">HTML Element can contain other Elements.</p>
+							<p class="text-dark p-md-2">All HTML documents consist of nested HTML elements.</p>
+							<p class="text-dark p-md-2">The following example contains four HTML elements (<span class="text-danger">&#60html&#62</span>, <span class="text-danger">&#60body&#62</span>, <span class="text-danger">&#60h1&#62</span> and <span class="text-danger">&#60p&#62</span>):</p>
+
+							<div class="description_html">
+								<h3> Example </h3>
+							</div>
+						</div>
+					</div>
+					<div class="description_html code-bg">
+						<p class="text-dark font-weight-bold p-md-2">
+							&#60 !DOCTYPE html &#62 <br><br>
+							&#60 html &#62 <br>
+							&#60 Head &#62 <br>
+								&#60 title &#62 HTML Tutorial &#60 /title &#62 <br>
+							&#60 head &#62 <br>
+							&#60 body &#62 <br><br>
+
+							&#60 h1 &#62 This is a heading &#60 /h1 &#62 <br>
+								&#60 p &#62 This is a paragraph. &#60 /p &#62 <br><br>
+
+							&#60 /body &#62 <br>
+							&#60 /html &#62 <br>
+						</p>
+					</div>
+					<div class="">
+						<p class="text-dark h3">Example Explanation</p>
+					</div>
+					<div class="description_html">
+						<ul class="list-group text-dark">
+							<li class="list-group-item">The <span class="text-danger">&#60html&#62</span> element is the root element and it defines the whole HTML document.</li>
+							<li class="list-group-item">It has a start tag <span class="text-danger">&#60html&#62</span> and an end tag <span class="text-danger">&#60/html&#62</span>.</li>
+							<li class="list-group-item">Then, inside the <span class="text-danger">&#60html&#62</span> element there is a <span class="text-danger">&#60body</span> element.</li>
+							<li class="list-group-item">The <span class="text-danger">&#60body&#62</span> element defines the document's body.</li>
+							<li class="list-group-item">It has a start tag <span class="text-danger">&#60body&#62</span> and an end tag <span class="text-danger">&#60/body&#62</span>.</li>
+							<li class="list-group-item">Then, inside the <span class="text-danger">&#60body&#62</span> element there are two other elements: <span class="text-danger">&#60h1&#62</span> and <span class="text-danger">&#60p&#62</span>.</li>
+							<li class="list-group-item">The <span class="text-danger">&#60h1&#62</span> element defines a heading.</li>
+							<li class="list-group-item">It has a start tag <span class="text-danger">&#60h1&#62</span> and an end tag <span class="text-danger">&#60/h1&#62</span>.</li>
+							<li class="list-group-item">The <span class="text-danger">&#60p&#62</span> element defines a paragraph.</li>
+							<li class="list-group-item">It has a start tag <span class="text-danger">&#60p&#62</span> and an end tag <span class="text-danger">&#60/p&#62</span>.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="py-2 my-2">
+					<div class="">
+						<p class="text-dark title font-weight-bold font-italic">Never <span class="text-danger">Skip</span> the <span class="text-danger">End</span> Tag</p>
+					</div>
+					<div class="description_html">
+						<div class="py-md-2">
+							<p class="text-dark p-md-2">Some HTML elements will display correctly, but if you forget the end tag other HTML element will not work properly.</p>
+						</div>
+					</div>
+					<div class="description_html code-bg">
+						<p class="text-dark font-weight-bold p-md-2">
+							&#60 html &#62 <br>
+							&#60 body &#62 <br><br>
+
+							&#60 h1 &#62 This is a heading <br>
+							&#60 p &#62 This is a paragraph. <br><br>
+
+							&#60 /body &#62 <br>
+							&#60 /html &#62 <br>
+						</p>
+					</div>
+					<div class="jumbotron-fluid bg-warning p-2 rounded">
+						<p class="text-muted h5 p-2 text-justify"> <span class="text-dark">#Note:</span> In output above code will show error because tags are not ended properly. Unexpected results and errors may occur if you forget the end tag! So it is must to end the tags properly</p>
+					</div>
+				</div>
+				<div class="py-2 my-2">
+					<div class="">
+						<p class="text-dark title font-weight-bold font-italic">Empty HTML Elements</p>
+					</div>
+					<div class="description_html">
+						<div class="py-md-2">
+							<p class="text-dark p-md-2">HTML elements with no content are called empty elements.</p>
+							<p class="text-dark p-md-2">The &#60br&#60 tag defines a line break, and is an empty element without a closing tag</p>
+						</div>
+					</div>
+
+					<div class="description_html">
+						<h3> Example </h3>
+					</div>
+					<div class="description_html code-bg">
+						<p class="text-dark font-weight-bold p-md-2">
+							&#60h1&#62 This is a heading &#60br&#62 This is a paragraph.&#60/h1&#62
+						</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+		<section id="dropdown" class="container-fluid">
+			
+					        <div class=" menu-area mega-dropdown p-md-5 p-1">
+					          <div class="row">
+					          	<div class="col-sm-6 col-lg-3 down_manu p-1">
+									<h5 class="text-dark font-weight-bolder">HTML Base</h5>
+										<a href="learn_html_1.html" class="dropdown-item text-muted">HTML Introduction</a>
+										<a href="learn_html_2.html" class="dropdown-item text-muted">Html Editors</a>
+										<a href="learn_html_3.html" class="dropdown-item text-muted">HTML Doctype</a>
+										<a href="#" class="dropdown-item text-muted  border">HTML Elements</a>
+										<a href="#" class="dropdown-item text-muted">HTML Attributes</a>
+										<a href="#" class="dropdown-item text-muted">HTML Headings</a>
+										<a href="#" class="dropdown-item text-muted">HTML Paragraph</a>
+										<a href="#" class="dropdown-item text-muted">HTML Style</a>
+										<a href="#" class="dropdown-item text-muted">HTML Formation</a>
+										<a href="#" class="dropdown-item text-muted">HTML Quotations</a>
+										<a href="#" class="dropdown-item text-muted">HTML Comments</a>
+										<a href="#" class="dropdown-item text-muted">HTML Color</a>
+										<a href="#" class="dropdown-item text-muted">HTML CSS</a>
+										<a href="#" class="dropdown-item text-muted">HTML Links</a>
+										<a href="#" class="dropdown-item text-muted">HTML Images</a>
+										<a href="#" class="dropdown-item text-muted">HTML Tables</a>
+								</div>
+					          	<div class="col-sm-6 col-lg-3 down_manu mt-5 p-1">
+										<a href="#" class="dropdown-item text-muted">HTML List</a>
+										<a href="#" class="dropdown-item text-muted">HTML Block & Inline</a>
+										<a href="#" class="dropdown-item text-muted">HTML Classes</a>
+										<a href="#" class="dropdown-item text-muted">HTML Id</a>
+										<a href="#" class="dropdown-item text-muted">HTML Iframes</a>
+										<a href="#" class="dropdown-item text-muted">HTML JavaScript</a>
+										<a href="#" class="dropdown-item text-muted">HTML File Paths</a>
+										<a href="#" class="dropdown-item text-muted">HTML Head</a>
+										<a href="#" class="dropdown-item text-muted">HTML Layout</a>
+										<a href="#" class="dropdown-item text-muted">HTML Responsive</a>
+										<a href="#" class="dropdown-item text-muted">HTML Semantics</a>
+										<a href="#" class="dropdown-item text-muted">HTML Entities</a>
+										<a href="#" class="dropdown-item text-muted">HTML Symbols</a>
+										<a href="#" class="dropdown-item text-muted">HTML Emojis</a>
+										<a href="#" class="dropdown-item text-muted">HTML Charsets</a>
+										<a href="#" class="dropdown-item text-muted">HTML URL Encode</a>
+								</div>
+								<div class="col-sm-6 col-lg-3 down_manu p-1">
+									<h5 class="text-dark font-weight-bolder">HTML Forms</h5>
+										<a href="#" class="dropdown-item text-muted">HTML Forms</a>
+										<a href="#" class="dropdown-item text-muted">HTML Forms Attributes</a>
+										<a href="#" class="dropdown-item text-muted">HTML Forms Elements</a>
+										<a href="#" class="dropdown-item text-muted">HTML Input Type</a>
+										<a href="#" class="dropdown-item text-muted">HTML Input Form Attributes</a>
+								</div>
+								<div class="col-sm-6 col-lg-3 down_manu p-1">
+									<h5 class="text-dark font-weight-bolder">HTML Media</h5>
+										<a href="#" class="dropdown-item text-muted">HTML Media</a>
+										<a href="#" class="dropdown-item text-muted">HTML Video</a>
+										<a href="#" class="dropdown-item text-muted">HTML Audio</a>
+										<a href="#" class="dropdown-item text-muted">HTML Plug-ins</a>
+										<a href="#" class="dropdown-item text-muted">HTML Youtube</a>
+								</div>
+								<div class="col-sm-6 col-lg-3 down_manu p-1">
+									<h5 class="text-dark font-weight-bolder">HTML Graphics</h5>
+										<a href="#" class="dropdown-item text-muted">HTML Canvas</a>
+										<a href="#" class="dropdown-item text-muted">HTML SVG</a>
+								</div>
+								<div class="col-sm-6 col-lg-3 down_manu p-1">
+									<h5 class="text-dark font-weight-bolder">HTML APIs</h5>
+										<a href="#" class="dropdown-item text-muted">HTML Geolocation</a>
+										<a href="#" class="dropdown-item text-muted">HTML Drag & Drop</a>
+										<a href="#" class="dropdown-item text-muted">HTML web Storage</a>
+										<a href="#" class="dropdown-item text-muted">HTML web Workers</a>
+										<a href="#" class="dropdown-item text-muted">HTML SSE</a>
+					          	</div>
+								<div class="col-sm-6 col-lg-3 down_manu p-1">
+									<h5 class="text-dark font-weight-bolder">HTML Examples</h5>
+										<a href="#" class="dropdown-item text-muted">HTML Examples</a>
+										<a href="#" class="dropdown-item text-muted">HTML Summary</a>
+										<a href="#" class="dropdown-item text-muted">HTML Accessibility</a>
+					          	</div>
+								<div class="col-sm-6 col-lg-3 down_manu p-1">
+									<h5 class="text-dark font-weight-bolder">HTML References</h5>
+										<a href="#" class="dropdown-item text-muted">HTML Tag List</a>
+										<a href="#" class="dropdown-item text-muted">HTML Attributes</a>
+										<a href="#" class="dropdown-item text-muted">HTML Global Attributes</a>
+										<a href="#" class="dropdown-item text-muted">HTML Browser Support</a>
+										<a href="#" class="dropdown-item text-muted">HTML Events</a>
+										<a href="#" class="dropdown-item text-muted">HTML Color</a>
+										<a href="#" class="dropdown-item text-muted">HTML Canvas</a>
+										<a href="#" class="dropdown-item text-muted">HTML Audio & Video</a>
+										<a href="#" class="dropdown-item text-muted">HTML Doctypes</a>
+										<a href="#" class="dropdown-item text-muted">HTML Character Sets</a>
+										<a href="#" class="dropdown-item text-muted">HTML URL Encode</a>
+										<a href="#" class="dropdown-item text-muted">HTML Lang Code</a>
+										<a href="#" class="dropdown-item text-muted">HTTP Massages</a>
+										<a href="#" class="dropdown-item text-muted">HTTP Methods</a>
+					          	</div>
+					          </div>
+					        </div>
+		</section>
+
+	</section>
+
+
+
+<!-- main section end -->
+
+<!-- PreFooter start -->
+
+		<section id="preFooter" class="container-fluid py-5" style="background: #000E1C;">
+			<div class="row py-3">
+				<div class="col-sm-4 text-right py-md-1">
+				 	<img src="../images/logo/cws_logo.png" alt="ClassicWebSchool.com"  height="" class="rounded mx-auto d-block" width="100%">
+				</div>
+
+				<div class="col-md-5 py-md-5">
+
+					<h5 class="text-muted">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</h5>
+					
+				</div>
+
+				<div class="col-md-3 py-md-5">
+
+					<a href="#" class="text-muted"><h5><i class="fab fa-facebook mt-md-3" style="font-size: 2em;"></i> /ClassicWebSchool</h5></a>
+					<a href="#" class="text-muted"><h5><i class="fab fab fa-linkedin-in mt-md-3" style="font-size: 2em;"></i> /ClassicWebSchool</h5></a>
+					<a href="#" class="text-muted"><h5><i class="fab fab fa-youtube mt-md-3" style="font-size: 2em;"></i> /classicwebschool</h5></a>
+						
+				</div>
+
+			</div>
+		
+		</section>
+
+
+
+
+
+<!-- PreFooter end -->
+
+<!-- footer start  -->
+
+	<footer class="bg-dark py-4">
+		<h5 class="text-muted text-center">&copy All Rights Reserved By <a href="#" title="" class="text-light">Sakib Hasan</a></h5>
+	</footer>
+
+
+<!-- footer end  -->
+
+
+
+
+
+	<!-- custom javascript -->
+	<script src="main.js" type="text/javascript" charset="utf-8" async defer></script>
+
+	<!-- icon javascript -->
+	<script src="https://kit.fontawesome.com/357cf294b1.js" crossorigin="anonymous"></script>
+
+	<!-- bootstrap4 js -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

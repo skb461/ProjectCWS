@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>ClassicWebSchool-HTML Editors</title>
+
+
+    <!--Site Icons-->
+    <link rel="shortcut icon" href="../images/logo/cws_logo.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../images/logo/cws_logo.png">
+
+	<!-- custom css -->
+	<link rel="stylesheet" href="style.css">
+
+	<!-- bootstrap4 css -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	
+<style type="text/css" media="screen">
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	.menu-area{
+		position: static;
+	}
+	.extra-bg{
+		background: #A2A2A2;
+	}
+	.code-bg{
+		background: #D5D5D5;
+		font-size: 15px;
+		border-radius: 5px;
+	}
+	.mega-one, .mega-two, .mega-three{
+		transition: 0.3s all ease;
+	}
+	.sideManuList{
+		list-style: none;
+	}
+	.sideManuList li{
+		line-height: 30px;
+	}
+	.sideManuList li a{
+		color: #E8E8E8;
+		transition: 0.3s all ease;
+	}
+	.sideManuList li a:hover{
+		color: #00D17F;
+	}
+	.down_manu a:hover{
+		color: #00D17F;
+	}
+	.mega-dropdown h5{
+		color: #d4d4d4;
+		font-size: 30px;
+		line-height: 40px;
+		letter-spacing: 0.5px;
+	}
+	.mega-dropdown a{
+		color: #e2e2e2;
+		line-height: 30px;
+		word-spacing: 2px;
+		letter-spacing: 1px;
+	}
+	.active{
+		border-bottom: 1px solid #E8E8E8;
+		font-size: 15px;
+	}
+	.title{
+		font-size: 45px;
+	}
+	.description_html{
+		font-size: 15px;
+	}
+	#dropdown{
+		display: none;
+	}
+	@media screen and (max-width: 1498px) {
+
+	#sideBarManu{
+		display: none;
+	}
+
+	#dropdown{
+		display: block;
+	}
+
+	}
+
+
+</style>
+
+</head>
+<body>
+
+<!-- top manu start -->
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12">
+					<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+					  <!-- <a class="navbar-brand" href="#">Classic Web School</a> -->
+					  <a href="../index.html" title=""><img src="../images/logo/cws_logo.png" alt="Classic Web School" class="img-fluid logo-img px-3" style="height: 70px;"></a>
+					  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
+					    <span class="navbar-toggler-icon"></span>
+					  </button>
+
+					  <div class="collapse navbar-collapse" id="navbar">
+					    <ul class="navbar-nav ml-auto">
+					      <li class="nav-item">
+					        <a class="nav-link px-3" href="../index.html">Home</a>
+					      </li>
+					      <li class="nav-item">
+					        <a class="nav-link px-3" href="#">About</a>
+					      </li>
+					      <li class="nav-item dropdown menu-area">
+					        <a class="nav-link dropdown-toggle px-3 active" href="#" id="mega-one" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					          Tutorials
+					        </a>
+					        <div class="dropdown-menu menu-area container-fluid p-5 mega-dropdown bg-dark text-light" aria-labelledby="mega-one">
+					          <div class="row">
+					          	<div class="col-sm-6 col-lg-3">
+									<h5>HTML</h5>
+										<a href="learn_html_1.html" class="dropdown-item">Learn HTML Base</a>
+										<a href="#" class="dropdown-item">Learn HTML Forms</a>
+										<a href="#" class="dropdown-item">Learn HTML Graphyics</a>
+										<a href="#" class="dropdown-item">Learn HTML Media</a>
+										<a href="#" class="dropdown-item">Learn HTML APIs</a>
+								</div>
+								<div class="col-sm-6 col-lg-3">
+									<h5>CSS</h5>
+										<a href="#" class="dropdown-item">Learn CSS Base</a>
+										<a href="#" class="dropdown-item">Learn CSS Advanced</a>
+										<a href="#" class="dropdown-item">Learn CSS Aminations</a>
+										<a href="#" class="dropdown-item">Learn CSS Grid</a>
+								</div>
+								<div class="col-sm-6 col-lg-3">
+									<h5>JavaScript</h5>
+										<a href="#" class="dropdown-item">Learn JavaScript Base</a>
+										<a href="#" class="dropdown-item">Learn JavaScript Versions</a>
+										<a href="#" class="dropdown-item">Learn JavaScript Froms</a>
+										<a href="#" class="dropdown-item">Learn JavaScript Objects</a>
+										<a href="#" class="dropdown-item">Learn JavaScript Functions</a>
+										<a href="#" class="dropdown-item">Learn JavaScript Classes</a>
+										<a href="#" class="dropdown-item">Learn JavaScript Async</a>
+										<a href="#" class="dropdown-item">Learn JavaScript HTML DOM</a>
+										<a href="#" class="dropdown-item">Learn JavaScript Browser BOM</a>
+										<a href="#" class="dropdown-item">Learn JavaScript AJAX</a>
+										<a href="#" class="dropdown-item">Learn JavaScript JSON</a>
+										<a href="#" class="dropdown-item">Learn JavaScript Web APIs</a>
+								</div>
+								<div class="col-sm-6 col-lg-3">
+									<h5>PHP</h5>
+										<a href="#" class="dropdown-item">Learn PHP Tutorials</a>
+										<a href="#" class="dropdown-item">Learn PHP Forms</a>
+										<a href="#" class="dropdown-item">Learn PHP Advanced</a>
+										<a href="#" class="dropdown-item">Learn PHP OOP</a>
+										<a href="#" class="dropdown-item">Learn PHP with MySQL Database</a>
+										<a href="#" class="dropdown-item">Learn PHP XML</a>
+										<a href="#" class="dropdown-item">Learn PHP AJAX</a>
+								</div>
+								<div class="col-sm-6 col-lg-3">
+									<h5>SQL</h5>
+										<a href="#" class="dropdown-item">Learn SQL Base</a>
+										<a href="#" class="dropdown-item">Learn SQL Database</a>
+					          	</div>
+					          </div>
+					        </div>
+					      </li>
+
+
+					      <li class="nav-item dropdown menu-area">
+					        <a class="nav-link dropdown-toggle px-3" href="#" id="mega-two" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					          References
+					        </a>
+					        <div class="dropdown-menu menu-area container-fluid p-5 mega-dropdown bg-dark text-light" aria-labelledby="mega-two">
+					          <div class="row">
+					          	<div class="col-sm-6 col-lg-3">
+									<h5>HTML</h5>
+										<a href="#" class="dropdown-item">HTML Tag Reference</a>
+										<a href="#" class="dropdown-item">HTML Attribute Reference</a>
+										<a href="#" class="dropdown-item">HTML Color Reference</a>
+										<a href="#" class="dropdown-item">HTML Browser Support</a>
+										<a href="#" class="dropdown-item">HTML Canvas Reference</a>
+										<a href="#" class="dropdown-item">HTML SVG Reference</a>
+										<a href="#" class="dropdown-item">HTML Character Sets</a>
+								</div>
+								<div class="col-sm-6 col-lg-3">
+									<h5>CSS</h5>
+										<a href="#" class="dropdown-item">CSS Property Reference</a>
+										<a href="#" class="dropdown-item">CSS Browser Support</a>
+										<a href="#" class="dropdown-item">CSS Sector Reference</a>
+										<a href="#" class="dropdown-item">Bootstrap 3 Reference</a>
+										<a href="#" class="dropdown-item">Bootstrap 4 Reference</a>
+										<a href="#" class="dropdown-item">Bootstrap 5 Reference</a>
+										<a href="#" class="dropdown-item">Icon Reference</a>
+										<a href="#" class="dropdown-item">Sass Character Sets</a>
+								</div>
+								<div class="col-sm-6 col-lg-3">
+									<h5>JavaScript</h5>
+										<a href="#" class="dropdown-item">JavaScript Reference</a>
+										<a href="#" class="dropdown-item">HTML DOM Reference</a>
+										<a href="#" class="dropdown-item">jQuery Reference</a>
+										<a href="#" class="dropdown-item">AngularJS Property Reference</a>
+										<a href="#" class="dropdown-item">AppML Property Reference</a>
+								</div>
+								<div class="col-sm-6 col-lg-3">
+									<h5>Server Side</h5>
+										<a href="#" class="dropdown-item">SQL Reference</a>
+										<a href="#" class="dropdown-item">PHP Reference</a>
+										<a href="#" class="dropdown-item">ASP Reference</a>
+								</div>
+					          </div>
+					        </div>
+					      </li>
+
+
+					      <li class="nav-item dropdown menu-area">
+					        <a class="nav-link dropdown-toggle px-3" href="#" id="mega-three" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					          Examples
+					        </a>
+					        <div class="dropdown-menu menu-area container-fluid p-5 mega-dropdown bg-dark text-light" aria-labelledby="mega-three">
+					          <div class="row">
+					          	<div class="col-sm-6 col-lg-3">
+									<h5>HTML & CSS</h5>
+										<a href="#" class="dropdown-item">HTML Examples</a>
+										<a href="#" class="dropdown-item">CSS Examples</a>
+										<a href="#" class="dropdown-item">Bootstrap Examples</a>
+										<a href="#" class="dropdown-item">SVG Examples</a>
+								</div>
+								<div class="col-sm-6 col-lg-3">
+									<h5>JavaScript</h5>
+										<a href="#" class="dropdown-item">JavaScript Examples</a>
+										<a href="#" class="dropdown-item">HTML DOM</a>
+										<a href="#" class="dropdown-item">jQuery Examples</a>
+										<a href="#" class="dropdown-item">AngularJS Examples</a>
+										<a href="#" class="dropdown-item">AJAX Examples</a>
+								</div>
+								<div class="col-sm-6 col-lg-3">
+									<h5>Server Side</h5>
+										<a href="#" class="dropdown-item">SQL Examples</a>
+										<a href="#" class="dropdown-item">PHP Examples</a>
+										<a href="#" class="dropdown-item">ASP Examples</a>
+								</div>
+					          </div>
+					        </div>
+					      </li>
+
+					      <li class="nav-item">
+					        <a class="nav-link px-3" href="#">Donate</a>
+					      </li>
+
+					    </ul>
+					  </div>
+					</nav>	
+				</div>
+			</div>
+		</div>
+
+
+
+<!-- top manu end -->
+
+<!-- main section start -->
+
+	
+	<section class="container-fluid row contentSection mt-1 col-12">
+		
+		<!-- sideBarManu start -->
+		<div class="col-lg-2 bg-dark" id="sideBarManu" >
+			<div class="container">
+						<div class="sideContent">
+							<div class="">
+								<header class="text-light h3 py-2">HTML Base</header>
+								<hr class="bg-light w-100">
+								<ul class="sideManuList">
+									<li><a href="learn_html_1.html">HTML Introduction</a></li>
+									<li><a href="#" class="active">Html Editors</a></li>
+									<li><a href="learn_html_3.html">HTML Doctype</a></li>
+									<li><a href="learn_html_4.html">HTML Elements</a></li>
+									<li><a href="#">HTML Attributes</a></li>
+									<li><a href="#">HTML Headings</a></li>
+									<li><a href="#">HTML Paragraph</a></li>
+									<li><a href="#">HTML Style</a></li>
+									<li><a href="#">HTML Formation</a></li>
+									<li><a href="#">HTML Quotations</a></li>
+									<li><a href="#">HTML Comments</a></li>
+									<li><a href="#">HTML Color</a></li>
+									<li><a href="#">HTML CSS</a></li>
+									<li><a href="#">HTML Links</a></li>
+									<li><a href="#">HTML Images</a></li>
+									<li><a href="#">HTML Tables</a></li>
+									<li><a href="#">HTML List</a></li>
+									<li><a href="#">HTML Block & Inline</a></li>
+									<li><a href="#">HTML Classes</a></li>
+									<li><a href="#">HTML Id</a></li>
+									<li><a href="#">HTML Iframes</a></li>
+									<li><a href="#">HTML JavaScript</a></li>
+									<li><a href="#">HTML File Paths</a></li>
+									<li><a href="#">HTML Head</a></li>
+									<li><a href="#">HTML Layout</a></li>
+									<li><a href="#">HTML Responsive</a></li>
+									<li><a href="#">HTML Semantics</a></li>
+									<li><a href="#">HTML Entities</a></li>
+									<li><a href="#">HTML Symbols</a></li>
+									<li><a href="#">HTML Emojis</a></li>
+									<li><a href="#">HTML Charsets</a></li>
+									<li><a href="#">HTML URL Encode</a></li>
+								</ul>
+							</div>
+							<div class="">
+								<header class="text-light h3 py-2">HTML Forms</header>
+								<hr class="bg-light w-100">
+								<ul class="sideManuList">
+									<li><a href="#">HTML Forms</a></li>
+									<li><a href="#">HTML Forms Attributes</a></li>
+									<li><a href="#">HTML Forms Elements</a></li>
+									<li><a href="#">HTML Input Type</a></li>
+									<li><a href="#">HTML Input Form Attributes</a></li>
+								</ul>
+							</div>
+							<div class="">
+								<header class="text-light h3 py-2">HTML Media</header>
+								<hr class="bg-light w-100">
+								<ul class="sideManuList">
+									<li><a href="#">HTML Media</a></li>
+									<li><a href="#">HTML Video</a></li>
+									<li><a href="#">HTML Audio</a></li>
+									<li><a href="#">HTML Plug-ins</a></li>
+									<li><a href="#">HTML Youtube</a></li>
+								</ul>
+							</div>
+							<div class="">
+								<header class="text-light h3 py-2">HTML Graphics</header>
+								<hr class="bg-light w-100">
+								<ul class="sideManuList">
+									<li><a href="#">HTML Canvas</a></li>
+									<li><a href="#">HTML SVG</a></li>
+								</ul>
+							</div>
+
+							<div class="">
+								<header class="text-light h3 py-2">HTML APIs</header>
+								<hr class="bg-light w-100">
+								<ul class="sideManuList">
+									<li><a href="#">HTML Geolocation</a></li>
+									<li><a href="#">HTML Drag & Drop</a></li>
+									<li><a href="#">HTML web Storage</a></li>
+									<li><a href="#">HTML web Workers</a></li>
+									<li><a href="#">HTML SSE</a></li>
+								</ul>
+							</div>
+							<div class="">
+								<header class="text-light h3 py-2">HTML Examples</header>
+								<hr class="bg-light w-100">
+								<ul class="sideManuList">
+									<li><a href="#">HTML Examples</a></li>
+									<li><a href="#">HTML Summary</a></li>
+									<li><a href="#">HTML Accessibility</a></li>
+								</ul>
+							</div>
+							<div class="">
+								<header class="text-light h3 py-2">HTML References</header>
+								<hr class="bg-light w-100">
+								<ul class="sideManuList">
+									<li><a href="#">HTML Tag List</a></li>
+									<li><a href="#">HTML Attributes</a></li>
+									<li><a href="#">HTML Global Attributes</a></li>
+									<li><a href="#">HTML Browser Support</a></li>
+									<li><a href="#">HTML Events</a></li>
+									<li><a href="#">HTML Color</a></li>
+									<li><a href="#">HTML Canvas</a></li>
+									<li><a href="#">HTML Audio & Video</a></li>
+									<li><a href="#">HTML Doctypes</a></li>
+									<li><a href="#">HTML Character Sets</a></li>
+									<li><a href="#">HTML URL Encode</a></li>
+									<li><a href="#">HTML Lang Code</a></li>
+									<li><a href="#">HTTP Massages</a></li>
+									<li><a href="#">HTTP Methods </a></li>
+								</ul>
+							</div>
+						</div>
+				
+			</div>	
+		</div>
+		<!-- sideBarManu end -->
+		<div class="container-fluid col-lg-8">
+			<div class="container-fluid col-12 py-3 pt-5">
+				<div class="">
+					<h1 class="display-4 text-dark font-weight-bold">HTML Editors</h1>
+					<hr class="w-100 bg-secondary float-left pt-1 mt-lg-3">
+				</div>
+				<div class="">
+					<h3 class="text-dark">A simple text editor like Notepad is all you need to learn HTML and build a websites.</h3>
+				</div>
+			</div>
+			<div class="container-fluid col-12">
+				<div class="py-2 my-2">
+					<div class="">
+						<p class="text-dark title font-weight-bold font-italic">Learn HTML Using TextEdit</p>
+					</div>
+					<div class="description_html">
+						<ul class="list-group text-dark">
+							<li class="list-group-item">Web pages can be created and modified by using professional HTML editors <span class="bg-warning p-1 rounded">(like sublime text, VS studio, atom etc.)</span>.</li>
+							<li class="list-group-item">However, for learning HTML we recommend a simple text editor like <span class="text-danger">Notepad (Windows) or TextEdit (Mac)</span>.</li>
+							<li class="list-group-item">We believe in that using a simple text editor is a good way to learn HTML.</li>
+							<li class="list-group-item">Follow the steps below to create your first web page with <span class="text-danger">Notepad (Windows) or TextEdit (Mac)</span>.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="py-2 my-2">
+					<div class="">
+						<p class="text-dark title font-weight-bold font-italic">First<sup>1</sup>: Open Notepad (windows)</p>
+					</div>
+					<div class="description_html">
+						<div class="py-md-2">
+							<p class="text-dark font-weight-bold px-md-2">From Windows 8 or later:</p>
+							<p class="text-dark px-md-2">Open the <span class="text-danger">Start Screen</span> (the window symbol at the bottom left on your screen). Type In <span class="text-danger">Notepad</span>.</p>
+						</div>
+						<div class="py-md-2">
+							<p class="text-dark font-weight-bold px-md-2">From Windows 7 or earlier:</p>
+							<p class="text-dark px-md-2">Open In <span class="text-danger">Start > Programs > Accessories > Notepad</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="py-2 my-2">
+					<div class="">
+						<p class="text-dark title font-weight-bold font-italic">First<sup>2</sup>: Open TextEdit (Mac)</p>
+					</div>
+					<div class="description_html">
+							<p class="text-dark px-md-2">Open <span class="text-danger">Finder > Applications > TextEdit</span></p>
+							<p class="text-dark px-md-2">Also change some preferences to get the application to save files correctly. In <span class="text-danger">Preferences > Format > choose "Plain Text"</span></p>
+							<p class="text-dark px-md-2">Then under <span class="text-danger">"Open and Save"</span>, check the box that says <span class="text-danger">"Display HTML files as HTML code instead of formatted text"</span>.</p>
+							<p class="text-dark px-md-2">Then open a <span class="text-danger">new document</span> to place the code.</p>
+					</div>
+				</div>
+				<div class="py-2 my-2">
+					<div class="">
+						<p class="text-dark title font-weight-bold font-italic">Second: Write Some HTML</p>
+					</div>
+					<div class="description_html">
+						<p class="text-dark p-md-2">Write or copy the following HTML code into Notepad:</p>
+						<div class="code-bg">
+							<p class="text-dark font-weight-bold p-md-2">
+								&#60 !DOCTYPE html &#62 <br><br>
+								&#60 html &#62 <br>
+								&#60 Head &#62 <br>
+									&#60 title &#62 HTML Tutorial &#60 /title &#62 <br>
+								&#60 head &#62 <br>
+								&#60 body &#62 <br><br>
+
+								&#60 h1 &#62 This is a heading &#60 /h1 &#62 <br>
+									&#60 p &#62 This is a paragraph. &#60 /p &#62 <br><br>
+
+								&#60 /body &#62 <br>
+								&#60 /html &#62 <br>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="py-2 my-2">
+					<div class="">
+						<p class="text-dark title font-weight-bold font-italic">Fourth: Save the HTML Page</p>
+					</div>
+					<div class="description_html">
+						<p class="text-dark px-md-2">Save the file on your computer. Select <span class="text-danger">File > Save</span> as in the <span class="text-danger">Notepad menu</span>.</p>
+						<p class="text-dark px-md-2">Name the file <span class="text-danger">"index.htm"</span> and set the encoding to <span class="text-danger">UTF-8</span> (which is the preferred encoding for HTML files).</p>
+						<img src="../images/web demo save.png" alt="web demo" class="img-fluid w-50 rounded" style="border: 1px solid #e2e2e2;">
+					</div>
+				</div>
+				<div class="py-2 my-2">
+					<div class="">
+						<p class="text-dark title font-weight-bold font-italic">Fifth: View the HTML Page in Your Browser</p>
+					</div>
+					<div class="description_html">
+						<p class="text-dark px-md-2">Open the saved HTML file in your favorite browser (double click on the file, or right-click - and choose "Open with").</p>
+						<p class="text-dark px-md-2">The result will look much like this:</p>
+						<img src="../images/web demo.png" alt="web demo" class="img-fluid w-50 rounded" style="border: 1px solid #e2e2e2;">
+					</div>
+				</div>
+				<div class="py-2 my-2">
+					<div class="">
+						<p class="text-dark title font-weight-bold font-italic">Few Text Editors and there Download links:</p>
+					</div>
+					<div class="description_html">
+						<table class="table-bordered table-hover table-striped table">
+							<thead>
+								<tr>
+									<th>Name of Editors</th>
+									<th>Dodnload link</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Notepad++</td>
+									<td><a href="https://notepad-plus-plus.org/downloads/" title="" target="_blank" class="btn btn-outline-dark p-2 col-12">Download Notepad++ Here</a></td>
+								</tr>
+								<tr>
+									<td>Sublime Text</td>
+									<td><a href="https://www.sublimetext.com/3" title="" target="_blank" class="btn btn-outline-dark p-2 col-12">Download Sublime Text Here</a></td>
+								</tr>
+								<tr>
+									<td>Visual Studio Code</td>
+									<td><a href="https://code.visualstudio.com/Download" title="" target="_blank" class="btn btn-outline-dark p-2 col-12">Download VS Code Here</a></td>
+								</tr>
+								<tr>
+									<td>Atom</td>
+									<td><a href="https://atom.io/" title="" target="_blank" class="btn btn-outline-dark p-2 col-12">Download Atom Here</a></td>
+								</tr>
+								<tr>
+									<td>Vim</td>
+									<td><a href="https://www.vim.org/download.php" title="" target="_blank" class="btn btn-outline-dark p-2 col-12">Download Vim Code Here</a></td>
+								</tr>
+								<tr>
+									<td>Brackets</td>
+									<td><a href="http://brackets.io/" title="" target="_blank" class="btn btn-outline-dark p-2 col-12">Download Brackets Here</a></td>
+								</tr>
+								<tr>
+									<td>Komodo Editor</td>
+									<td><a href="https://www.activestate.com/products/komodo-ide/downloads/edit/" title="" target="_blank" class="btn btn-outline-dark p-2 col-12">Download Komodo Editor Here</a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<section id="dropdown" class="container-fluid">
+			
+					        <div class=" menu-area mega-dropdown p-md-5 p-1">
+					          <div class="row">
+					          	<div class="col-sm-6 col-lg-3 down_manu p-1">
+									<h5 class="text-dark font-weight-bolder">HTML Base</h5>
+										<a href="learn_html_1.html" class="dropdown-item text-muted">HTML Introduction</a>
+										<a href="#" class="dropdown-item text-muted border">Html Editors</a>
+										<a href="learn_html_3.html" class="dropdown-item text-muted">HTML Doctype</a>
+										<a href="learn_html_4.html" class="dropdown-item text-muted">HTML Elements</a>
+										<a href="#" class="dropdown-item text-muted">HTML Attributes</a>
+										<a href="#" class="dropdown-item text-muted">HTML Headings</a>
+										<a href="#" class="dropdown-item text-muted">HTML Paragraph</a>
+										<a href="#" class="dropdown-item text-muted">HTML Style</a>
+										<a href="#" class="dropdown-item text-muted">HTML Formation</a>
+										<a href="#" class="dropdown-item text-muted">HTML Quotations</a>
+										<a href="#" class="dropdown-item text-muted">HTML Comments</a>
+										<a href="#" class="dropdown-item text-muted">HTML Color</a>
+										<a href="#" class="dropdown-item text-muted">HTML CSS</a>
+										<a href="#" class="dropdown-item text-muted">HTML Links</a>
+										<a href="#" class="dropdown-item text-muted">HTML Images</a>
+										<a href="#" class="dropdown-item text-muted">HTML Tables</a>
+								</div>
+					          	<div class="col-sm-6 col-lg-3 down_manu mt-5 p-1">
+										<a href="#" class="dropdown-item text-muted">HTML List</a>
+										<a href="#" class="dropdown-item text-muted">HTML Block & Inline</a>
+										<a href="#" class="dropdown-item text-muted">HTML Classes</a>
+										<a href="#" class="dropdown-item text-muted">HTML Id</a>
+										<a href="#" class="dropdown-item text-muted">HTML Iframes</a>
+										<a href="#" class="dropdown-item text-muted">HTML JavaScript</a>
+										<a href="#" class="dropdown-item text-muted">HTML File Paths</a>
+										<a href="#" class="dropdown-item text-muted">HTML Head</a>
+										<a href="#" class="dropdown-item text-muted">HTML Layout</a>
+										<a href="#" class="dropdown-item text-muted">HTML Responsive</a>
+										<a href="#" class="dropdown-item text-muted">HTML Semantics</a>
+										<a href="#" class="dropdown-item text-muted">HTML Entities</a>
+										<a href="#" class="dropdown-item text-muted">HTML Symbols</a>
+										<a href="#" class="dropdown-item text-muted">HTML Emojis</a>
+										<a href="#" class="dropdown-item text-muted">HTML Charsets</a>
+										<a href="#" class="dropdown-item text-muted">HTML URL Encode</a>
+								</div>
+								<div class="col-sm-6 col-lg-3 down_manu p-1">
+									<h5 class="text-dark font-weight-bolder">HTML Forms</h5>
+										<a href="#" class="dropdown-item text-muted">HTML Forms</a>
+										<a href="#" class="dropdown-item text-muted">HTML Forms Attributes</a>
+										<a href="#" class="dropdown-item text-muted">HTML Forms Elements</a>
+										<a href="#" class="dropdown-item text-muted">HTML Input Type</a>
+										<a href="#" class="dropdown-item text-muted">HTML Input Form Attributes</a>
+								</div>
+								<div class="col-sm-6 col-lg-3 down_manu p-1">
+									<h5 class="text-dark font-weight-bolder">HTML Media</h5>
+										<a href="#" class="dropdown-item text-muted">HTML Media</a>
+										<a href="#" class="dropdown-item text-muted">HTML Video</a>
+										<a href="#" class="dropdown-item text-muted">HTML Audio</a>
+										<a href="#" class="dropdown-item text-muted">HTML Plug-ins</a>
+										<a href="#" class="dropdown-item text-muted">HTML Youtube</a>
+								</div>
+								<div class="col-sm-6 col-lg-3 down_manu p-1">
+									<h5 class="text-dark font-weight-bolder">HTML Graphics</h5>
+										<a href="#" class="dropdown-item text-muted">HTML Canvas</a>
+										<a href="#" class="dropdown-item text-muted">HTML SVG</a>
+								</div>
+								<div class="col-sm-6 col-lg-3 down_manu p-1">
+									<h5 class="text-dark font-weight-bolder">HTML APIs</h5>
+										<a href="#" class="dropdown-item text-muted">HTML Geolocation</a>
+										<a href="#" class="dropdown-item text-muted">HTML Drag & Drop</a>
+										<a href="#" class="dropdown-item text-muted">HTML web Storage</a>
+										<a href="#" class="dropdown-item text-muted">HTML web Workers</a>
+										<a href="#" class="dropdown-item text-muted">HTML SSE</a>
+					          	</div>
+								<div class="col-sm-6 col-lg-3 down_manu p-1">
+									<h5 class="text-dark font-weight-bolder">HTML Examples</h5>
+										<a href="#" class="dropdown-item text-muted">HTML Examples</a>
+										<a href="#" class="dropdown-item text-muted">HTML Summary</a>
+										<a href="#" class="dropdown-item text-muted">HTML Accessibility</a>
+					          	</div>
+								<div class="col-sm-6 col-lg-3 down_manu p-1">
+									<h5 class="text-dark font-weight-bolder">HTML References</h5>
+										<a href="#" class="dropdown-item text-muted">HTML Tag List</a>
+										<a href="#" class="dropdown-item text-muted">HTML Attributes</a>
+										<a href="#" class="dropdown-item text-muted">HTML Global Attributes</a>
+										<a href="#" class="dropdown-item text-muted">HTML Browser Support</a>
+										<a href="#" class="dropdown-item text-muted">HTML Events</a>
+										<a href="#" class="dropdown-item text-muted">HTML Color</a>
+										<a href="#" class="dropdown-item text-muted">HTML Canvas</a>
+										<a href="#" class="dropdown-item text-muted">HTML Audio & Video</a>
+										<a href="#" class="dropdown-item text-muted">HTML Doctypes</a>
+										<a href="#" class="dropdown-item text-muted">HTML Character Sets</a>
+										<a href="#" class="dropdown-item text-muted">HTML URL Encode</a>
+										<a href="#" class="dropdown-item text-muted">HTML Lang Code</a>
+										<a href="#" class="dropdown-item text-muted">HTTP Massages</a>
+										<a href="#" class="dropdown-item text-muted">HTTP Methods</a>
+					          	</div>
+					          </div>
+					        </div>
+		</section>
+
+	</section>
+
+
+
+<!-- main section end -->
+
+<!-- PreFooter start -->
+
+		<section id="preFooter" class="container-fluid py-5" style="background: #000E1C;">
+			<div class="row py-3">
+				<div class="col-sm-4 text-right py-md-1">
+				 	<img src="../images/logo/cws_logo.png" alt="ClassicWebSchool.com"  height="" class="rounded mx-auto d-block" width="100%">
+				</div>
+
+				<div class="col-md-5 py-md-5">
+
+					<h5 class="text-muted">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</h5>
+					
+				</div>
+
+				<div class="col-md-3 py-md-5">
+
+					<a href="#" class="text-muted"><h5><i class="fab fa-facebook mt-md-3" style="font-size: 2em;"></i> /ClassicWebSchool</h5></a>
+					<a href="#" class="text-muted"><h5><i class="fab fab fa-linkedin-in mt-md-3" style="font-size: 2em;"></i> /ClassicWebSchool</h5></a>
+					<a href="#" class="text-muted"><h5><i class="fab fab fa-youtube mt-md-3" style="font-size: 2em;"></i> /classicwebschool</h5></a>
+						
+				</div>
+
+			</div>
+		
+		</section>
+
+
+
+
+
+<!-- PreFooter end -->
+
+<!-- footer start  -->
+
+	<footer class="bg-dark py-4">
+		<h5 class="text-muted text-center">&copy All Rights Reserved By <a href="#" title="" class="text-light">Sakib Hasan</a></h5>
+	</footer>
+
+
+<!-- footer end  -->
+
+
+
+
+
+	<!-- custom javascript -->
+	<script src="main.js" type="text/javascript" charset="utf-8" async defer></script>
+
+	<!-- icon javascript -->
+	<script src="https://kit.fontawesome.com/357cf294b1.js" crossorigin="anonymous"></script>
+
+	<!-- bootstrap4 js -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
